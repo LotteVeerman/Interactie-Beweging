@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Lotte Veerman">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Interactie & Beweging</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+	<link rel="icon" type="image/png+xml" href="images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Lottie de Axolotl</h1>
+	<div class="container">
+		<div class="hovers">
+			<video class="videoknop1" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" loop onclick="eten()">
+				<source src="images/knop-1.mp4" type="video/mp4">
+			</video>
+			<video class="videoknop2" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" loop onclick="slapen()">
+				<source src="images/knop-2.mp4" type="video/mp4">
+			</video>
+			<video class="videoknop3" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" loop onclick="verstoppen()">
+				<source src="images/knop-3.mp4" type="video/mp4">
+			</video>
+			<audio controls id="geluid1">
+				<source src="images/axolotl-1.mp3" type="audio/mp3">
+			</audio>
+			<audio controls id="geluid2">
+				<source src="images/axolotl-2.mp3" type="audio/mp3">
+			</audio>
+			<audio controls id="geluid3">
+				<source src="images/axolotl-3.mp3" type="audio/mp3">
+			</audio>
+		</div>
+		<video id="animatie" class="animatie" autoplay muted loop>
+			<source src="images/axolotl-4.mp4">
+		</video>
+	</div>
+	<script src="scripts/script.js"></script>
+</body>
+	
+</html>
